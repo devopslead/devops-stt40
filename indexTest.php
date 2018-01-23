@@ -4,6 +4,5 @@ use PHPUnit\Framework\TestCase;
 class indexTest extends TestCase {
     public function testIndex() {
         echo "Success";
-        exit(1);
     }
 }
