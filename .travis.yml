@@ -6,3 +6,8 @@ before_script:
   - composer install
 script:
   - phpunit --no-coverage indexTest.php
+deploy:
+  provider: heroku
+  api_key:
+    secure: Kzj0jZyzzY4ak7Ern0gSanxA9NyjP7DLHl9x7NKvnSndjofahQ1cWbF9H0zApDPM0ykdAAd0ChdiVnx8bRzOWwlm2toyhrcuhgdVxnuYUoOEMUEnBVXgi
+  app: devops-stt5
