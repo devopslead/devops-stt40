@@ -6,5 +6,4 @@ class indexTest extends TestCase {
         echo "success";
         exit(1);
     }
-} 
-echo  'k';
+}
