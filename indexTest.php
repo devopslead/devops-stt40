@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 use PHPUnit\Framework\TestCase;
 class indexTest extends TestCase {
     public function testIndex() {
-        echo "Failed";
+        echo "Success";
         exit(1);
     }
 }
