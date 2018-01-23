@@ -5,3 +5,10 @@ before_script:
   - composer install
 script:
   - phpunit --no-coverage indexTest.php
+deploy:
+  provider: heroku
+  api_key:
+    secure:
+WxAMnVZ7XOzGDnW3Y0Ha1z0xCWUc+7sqCUutHFYfQPh44JkolrK8xrEQrtEPuJHfknChUDUzTz5O4aUyP0lQthKm8/FnbjYJMajYmjNeDqzepBwO64ZL8CtD1kyBWBgSWl1sjywFSt4NRr6HPVZwpVvOKDpnjTi4azYjhOFlovYXlQbBEdYRysmdJmVEg+WQzL0h8LTQgfJVpkcRERrhkQx8re+XE+lehpCY8Ak+IJ6LzZV/w89mT/bWPfvhB2VB7bSSbAc0Y1XywAT5eXyj4ADLE6tm9DE5d7PUgFlJzYAlQpTzlhVjLEp0TBAxBeXj6HzuapevHiaXilvuIGBPboPV7vcz//YwJ2e1iNe6M4d0VM+bSMefB4E+XW6TLbXHQd6uJQ6ddRC3NiL2ksPK3lLs4xYVKZGRX1o9XIOVhA+Z048fw3OPvsUwENU2E0z7ylEJ9b+d8Uwv/H6AxSnUjv0yPRnm2GzN88ra3pWxelEPTtLbEUHY1CQzsAqmQkwu9LLjQOTkhGsHecxOBiatC9OoWD53wawgUZPSkGj9F/5wOua3LOpwLYjOEnyKOQtkM0EDXCjkcRFuG2aoFfSpzRQk564ayWTBYDyYNufCbSOZFJCtlhRVBM0JDikpPmzKo60qv7DMsce8GcvQaaHYIOcOFjFaIhfN91b7lTGsKe0=
+  app:
+    master: devops-essense
